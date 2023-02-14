@@ -14,15 +14,15 @@ header {
     top: 0;
 }
 #Logo{
-    height: 10vh;
+    height: 8vh;
     padding-left: 2vh;
 }
 #Logo:hover{
-    height: 12vh;
+    height: 8.5vh;
     transition: all 0.3s;
 }
 nav{
-    margin: 3vh 7vh;
+    margin: 3vh 6vh;
 
 }
 .menu{
@@ -40,20 +40,58 @@ nav{
 
 .banner{
     background-image: url(./Img/Fondo-Home.jpg);
-    height: 40vh;
+    height: 30vh;
     background-position: 0vh;
     background-size:cover;
-    position: relative;
+    display: flex;
 }
 
 .banner> a{
-    color: aliceblue;
+    color: #f5f7f8;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items:flex-end;
-    font-size: 20vh;
+    margin: auto;
+    font-size: 15vh;
+    text-shadow: 10px 5px 20px #111;
 }
-
+.contenedor{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.caja{
+    background-color:antiquewhite;
+    width: 40vh;
+    text-align: center;
+    margin: 5vh;
+    
+}
+.caja:hover{
+    box-shadow: 0px 10px 20px gray;
+}
+.caja_img{
+    height: 20vh;
+    margin: 2vh;
+    box-shadow: 5px 5px 5px black;
+}
+.sub-caja{
+display: flex;
+justify-content: space-around;
+}
+.boton{
+text-decoration: none;
+background-color: aquamarine;
+padding: 5px 20px;
+margin: 5px 0px; 
+}
+footer{
+    background-color: #111;
+}
+.contenedor-footer{
+    height: 7vh;
+}
+.contenedor-footer img{
+    height: 5vh;
+    margin: 5px;
+}
 
 
