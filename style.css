@@ -23,7 +23,6 @@ header {
 }
 nav{
     margin: 3vh 6vh;
-
 }
 .menu{
     text-decoration: none;
@@ -50,8 +49,11 @@ nav{
     color: #f5f7f8;
     text-decoration: none;
     margin: auto;
-    font-size: 15vh;
+    font-size: 10vh;
     text-shadow: 10px 5px 20px #111;
+}
+#next{
+    height: 6vh;
 }
 .contenedor{
     display: flex;
@@ -59,10 +61,11 @@ nav{
     justify-content: space-around;
 }
 .caja{
-    background-color:antiquewhite;
+    background-color:rgb(228, 228, 228);
     width: 40vh;
     text-align: center;
     margin: 5vh;
+    border-radius: 10px;
     
 }
 .caja:hover{
@@ -79,19 +82,144 @@ justify-content: space-around;
 }
 .boton{
 text-decoration: none;
-background-color: aquamarine;
+background-color:rgb(88, 144, 247);
+color: aliceblue;
 padding: 5px 20px;
 margin: 5px 0px; 
+text-shadow: 5px 0px 6px black;
+}
+form{
+    display: flex;
+    justify-content: center;
+    margin: 7vh;
+}
+table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 0.5em 2em;
+    margin: 2em auto;
+}
+
+thead{
+    background-color:#111;
+    color: aliceblue;
+}
+.title{
+    background-color: #111;
+    color: aliceblue;
 }
 footer{
     background-color: #111;
+    display: flex;
+    justify-content: space-between;
 }
 .contenedor-footer{
-    height: 7vh;
+    height: 8vh;
 }
 .contenedor-footer img{
-    height: 5vh;
+    height: 4vh;
     margin: 5px;
 }
+.contenedor-footer-titulo{
+    color: aliceblue;
+    margin: 2vh 5vh;
+}
 
+@media only screen and (max-width: 320px){
+    #Logo{
+        height: 3vh;
+    } 
+    header{
+        display: inline-block;
+        height: 20vh;
+    }
+    #Logo:hover{
+        height: 5vh;
+    }
+    nav{
+        margin: 1vh 1vh;
+    }
+    .menu{
+        margin: 0.5vh; 
+        padding: 0.7vh;
+    }
+    .menu:hover{
+        padding: 1vh;
+        transition: all 0.3s;
+    }
+    
+    .banner{
+        height: 25vh;
+    }
+    
+    .banner> a{
+        font-size: 6vh;
+    }  
+    #next{
+        height: 4vh;
+    }
+    table,th,td{
+        text-align: left;
+        padding: 0.2em 0em;
+        margin: 1em auto;
+    }
+    
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
 
+    #Logo{
+        height: 4vh;
+    } 
+    header{
+    justify-content: space-around;
+    align-items: self-end;
+    height: 15vh;
+    }
+    #Logo:hover{
+        height: 5vh;
+    }
+    nav{
+        margin: 1vh 2vh;
+    }
+    .menu{
+        margin: 0.5vh; 
+        padding: 0.7vh;
+    }
+    .menu:hover{
+        padding: 1vh;
+        transition: all 0.3s;
+    }
+    
+    .banner{
+        height: 25vh;
+    }
+    
+    .banner> a{
+        font-size: 7vh;
+    }  
+    #next{
+        height: 6vh;
+    }
+    table,th,td{
+        text-align: left;
+        padding: 0.2em 0em;
+        margin: 1em auto;
+    }
+}
+
+.contenedor-pop{
+    display: flex;
+    flex-direction:row;
+    margin: 5vh;
+}
+.caja-pop{
+    background-color:rgb(228, 228, 228);
+    width: 40vh;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
+.caja-pop:hover{
+    box-shadow: 0px 10px 20px gray;
+}
