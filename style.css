@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 header {
     display: flex;
@@ -113,9 +118,11 @@ footer{
     background-color: #111;
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
 }
 .contenedor-footer{
     height: 8vh;
+    padding-top: 1.5vh;
 }
 .contenedor-footer img{
     height: 4vh;
@@ -123,7 +130,7 @@ footer{
 }
 .contenedor-footer-titulo{
     color: aliceblue;
-    margin: 2vh 5vh;
+    margin: auto 3vh;
 }
 
 @media only screen and (max-width: 320px){
