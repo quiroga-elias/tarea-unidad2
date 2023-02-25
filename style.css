@@ -60,6 +60,24 @@ nav{
 #next{
     height: 6vh;
 }
+.buscador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(228, 228, 228);
+    padding: 4vh;
+}
+#buscar{
+    margin: 0vh 2vh;
+    padding: 0.5vh 0.5vh;
+    border-radius: 2vh;
+    text-align: center;
+    border-color: rgb(88, 144, 247);
+}
+#buscar:hover{
+    padding: 0.5vh 2.5vh;
+    transition: all 0.3s;
+}
 .contenedor{
     display: flex;
     flex-wrap:wrap;
