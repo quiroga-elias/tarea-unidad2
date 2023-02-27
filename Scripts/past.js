@@ -226,6 +226,12 @@ for (fecha in data.events ){
      let  estimate =document.createElement("p")
      estimate.innerHTML ="Estimate: " + (data.events[i]["estimate"])
      sub_caja.appendChild(estimate)
+     
+     let  boton =document.createElement("a")
+     boton.classList.add("boton")
+     boton.href = './details.html'
+     boton.innerHTML ="More Info"
+     sub_caja.appendChild(boton)
 
      fragmento.appendChild(caja)
   } else{
