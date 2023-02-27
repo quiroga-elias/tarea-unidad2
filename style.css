@@ -14,12 +14,12 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: black;
-    padding: 2vh;
+    padding: 0.5vh;
     position:sticky;
     top: 0;
 }
 #Logo{
-    height: 8vh;
+    height: 6.5vh;
     padding-left: 2vh;
 }
 #Logo:hover{
@@ -27,7 +27,7 @@ header {
     transition: all 0.3s;
 }
 nav{
-    margin: 3vh 6vh;
+    margin: 2vh 4vh;
 }
 .menu{
     text-decoration: none;
@@ -65,7 +65,7 @@ nav{
     flex-direction: row;
     justify-content: space-around;
     background-color: rgb(228, 228, 228);
-    padding: 4vh;
+    padding: 3vh;
 }
 #buscar{
     margin: 0vh 2vh;
@@ -114,7 +114,7 @@ text-shadow: 5px 0px 6px black;
 form{
     display: flex;
     justify-content: center;
-    margin: 7vh;
+    margin: 2vh;
 }
 table,th,td{
     border: 2px solid black;

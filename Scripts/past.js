@@ -203,9 +203,6 @@ for (fecha in data.events ){
      date.innerHTML ="Date: " + (data.events[i]["date"])
      caja.appendChild(date)
 
-     let description=document.createElement("p")
-     description.innerHTML ="Description: " + (data.events[i]["description"])
-     caja.appendChild(description)
 
      let place=document.createElement("p")
      place.innerHTML ="Place: " + (data.events[i]["place"])
@@ -219,14 +216,7 @@ for (fecha in data.events ){
      price.innerHTML ="Price: $" + (data.events[i]["price"])
      sub_caja.appendChild(price)
 
-     let  capacity =document.createElement("p")
-     capacity.innerHTML ="Capacity:" + (data.events[i]["capacity"])
-     sub_caja.appendChild(capacity)
-
-     let  estimate =document.createElement("p")
-     estimate.innerHTML ="Estimate: " + (data.events[i]["estimate"])
-     sub_caja.appendChild(estimate)
-     
+  
      let  boton =document.createElement("a")
      boton.classList.add("boton")
      boton.href = './details.html'

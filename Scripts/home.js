@@ -195,14 +195,6 @@ var data = {
      date.innerHTML ="Date: " + (data.events[i]["date"])
      caja.appendChild(date)
 
-     let description=document.createElement("p")
-     description.innerHTML ="Description: " + (data.events[i]["description"])
-     caja.appendChild(description)
-
-     let place=document.createElement("p")
-     place.innerHTML ="Place: " + (data.events[i]["place"])
-     caja.appendChild(place)
-
      let  sub_caja =document.createElement("DIV")
      sub_caja.classList.add("sub-caja")
      caja.appendChild(sub_caja)
@@ -210,14 +202,6 @@ var data = {
      let  price =document.createElement("p")
      price.innerHTML ="Price: $" + (data.events[i]["price"])
      sub_caja.appendChild(price)
-
-     let  capacity =document.createElement("p")
-     capacity.innerHTML ="Capacity:" + (data.events[i]["capacity"])
-     sub_caja.appendChild(capacity)
-
-     let  estimate =document.createElement("p")
-     estimate.innerHTML ="Estimate: " + (data.events[i]["estimate"])
-     sub_caja.appendChild(estimate)
 
      let  boton =document.createElement("a")
      boton.classList.add("boton")
