@@ -171,3 +171,68 @@ var data = {
       }
     ]
   };
+
+
+  let i=0
+  let fechas=[]
+  let valor=[]
+  let actual=(data["currentDate"])
+  const contenedor= document.querySelector(".contenedor");
+  let fragmento=document.createDocumentFragment();
+  
+  for (fecha in data.events ){
+    fechas.push(data.events[i]["date"])
+    if((data.events[i]["date"]) >= actual ){
+      let  caja =document.createElement("DIV")
+       caja.classList.add("caja")
+       
+       let imagen =document.createElement("IMG")
+       imagen.classList.add("caja_img")
+       caja.appendChild(imagen)
+       imagen.src = (data.events[i]["image"]) 
+       
+       let name=document.createElement("H2")
+       name.innerHTML =(data.events[i]["name"])
+       caja.appendChild(name)
+       
+       let category=document.createElement("H5")
+       category.innerHTML ="Category: " + (data.events[i]["category"])
+       caja.appendChild(category)
+  
+       let date=document.createElement("p")
+       date.innerHTML ="Date: " + (data.events[i]["date"])
+       caja.appendChild(date)
+  
+       let description=document.createElement("p")
+       description.innerHTML ="Description: " + (data.events[i]["description"])
+       caja.appendChild(description)
+  
+       let place=document.createElement("p")
+       place.innerHTML ="Place: " + (data.events[i]["place"])
+       caja.appendChild(place)
+  
+       let  sub_caja =document.createElement("DIV")
+       sub_caja.classList.add("sub-caja")
+       caja.appendChild(sub_caja)
+  
+       let  price =document.createElement("p")
+       price.innerHTML ="Price: $" + (data.events[i]["price"])
+       sub_caja.appendChild(price)
+  
+       let  capacity =document.createElement("p")
+       capacity.innerHTML ="Capacity:" + (data.events[i]["capacity"])
+       sub_caja.appendChild(capacity)
+  
+       let  estimate =document.createElement("p")
+       estimate.innerHTML ="Estimate: " + (data.events[i]["estimate"])
+       sub_caja.appendChild(estimate)
+  
+       fragmento.appendChild(caja)
+    } else{
+  
+    }
+    i=i+1
+    contenedor.appendChild(fragmento)
+  }
+  
+

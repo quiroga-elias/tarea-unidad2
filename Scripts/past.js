@@ -171,11 +171,19 @@ var data = {
       }
     ]
   };
-  
-  const contenedor= document.querySelector(".contenedor");
-  let fragmento=document.createDocumentFragment();
-  for (let i=0; i<=13;i++){
-     let  caja =document.createElement("DIV")
+
+
+let i=0
+let fechas=[]
+let valor=[]
+let actual=(data["currentDate"])
+const contenedor= document.querySelector(".contenedor");
+let fragmento=document.createDocumentFragment();
+
+for (fecha in data.events ){
+  fechas.push(data.events[i]["date"])
+  if((data.events[i]["date"]) <= actual ){
+    let  caja =document.createElement("DIV")
      caja.classList.add("caja")
      
      let imagen =document.createElement("IMG")
@@ -220,5 +228,12 @@ var data = {
      sub_caja.appendChild(estimate)
 
      fragmento.appendChild(caja)
+  } else{
+
   }
+  i=i+1
   contenedor.appendChild(fragmento)
+}
+
+
+
